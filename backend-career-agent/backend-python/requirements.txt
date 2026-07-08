@@ -1,0 +1,30 @@
+# ============================================
+# 后端职途 · Python AI 服务依赖
+# ============================================
+
+# --- Web 框架 ---
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+
+# --- AI / LLM / Agent ---
+langchain==0.3.14
+langchain-core==0.3.29
+langchain-openai==0.2.14
+langgraph==0.2.61
+
+# --- 数据校验 ---
+pydantic==2.10.4
+pydantic-settings==2.7.1
+
+# --- HTTP 客户端 ---
+httpx==0.28.1
+
+# --- 工具库 ---
+python-dotenv==1.0.1
+loguru==0.7.3
+
+# --- 文档解析与 OCR ---
+pillow==12.2.0
+pdfplumber==0.11.10
+pymupdf==1.27.2.3

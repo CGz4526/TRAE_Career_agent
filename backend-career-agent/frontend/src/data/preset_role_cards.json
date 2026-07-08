@@ -1,0 +1,336 @@
+[
+  {
+    "id": "java-backend-1",
+    "card_type": "preset",
+    "role_name": "Java后端开发工程师",
+    "icon": "java",
+    "description": "熟悉Spring生态体系，具备微服务开发能力",
+    "company": "互联网公司",
+    "tech_stack": ["Java", "Spring Boot", "Spring Cloud", "MyBatis-Plus", "MySQL", "Redis", "Kafka", "RocketMQ", "Docker", "Maven"],
+    "core_skills": [
+      "JVM原理与调优",
+      "并发编程(JUC)",
+      "Spring IoC/AOP原理",
+      "MySQL索引优化与事务",
+      "Redis缓存策略",
+      "分布式锁",
+      "消息队列应用",
+      "微服务架构设计"
+    ],
+    "soft_skills": ["团队协作", "技术文档撰写", "问题分析能力"],
+    "experience_years": "3-5年",
+    "education": "本科",
+    "interview_directions": [
+      "JVM内存模型与GC",
+      "并发与锁机制",
+      "Spring源码原理",
+      "MySQL调优",
+      "Redis高可用",
+      "微服务架构"
+    ],
+    "question_categories": [
+      {"name": "八股文", "weight": 45},
+      {"name": "算法", "weight": 15},
+      {"name": "系统设计", "weight": 25},
+      {"name": "项目深挖", "weight": 15}
+    ],
+    "difficulty_profile": "中等偏难",
+    "jd_summary": "【岗位职责】\n1. 负责公司核心业务系统的设计、开发与维护，保障高并发场景下的系统稳定性与性能；\n2. 参与微服务架构演进，主导服务拆分、治理与服务间通信方案落地；\n3. 负责数据库表结构设计、接口设计与核心代码编写，参与代码评审；\n4. 排查线上问题，进行 JVM 调优、SQL 优化与慢查询治理；\n5. 指导初中级工程师，推动团队技术规范与工程化建设。\n\n【任职要求】\n1. 本科及以上学历，计算机相关专业，3-5 年 Java 后端开发经验；\n2. 精通 Java，深入理解 JVM 内存模型、GC 机制、并发编程（JUC、锁机制、线程池）；\n3. 熟练使用 Spring Boot、Spring Cloud、MyBatis-Plus 等主流框架，理解 IoC/AOP 原理；\n4. 精通 MySQL，熟悉索引优化、事务隔离级别、分库分表方案；\n5. 熟练使用 Redis，掌握缓存策略、分布式锁、持久化机制；\n6. 熟悉 Kafka / RocketMQ 消息队列，了解高可用与消息一致性方案；\n7. 熟悉 Docker、Maven，了解 Kubernetes 者优先；\n8. 具备良好的沟通能力与团队协作精神，有分布式系统设计经验加分。"
+  },
+  {
+    "id": "python-backend-1",
+    "card_type": "preset",
+    "role_name": "Python后端开发工程师",
+    "icon": "python",
+    "description": "掌握Python异步编程，熟悉主流Web框架",
+    "company": "科技公司",
+    "tech_stack": ["Python", "FastAPI", "Django", "Flask", "MySQL", "Redis", "Celery", "SQLAlchemy", "Docker", "Nginx"],
+    "core_skills": [
+      "Python GIL与协程",
+      "FastAPI/Django框架原理",
+      "ORM性能优化",
+      "异步编程(asyncio)",
+      "Redis缓存",
+      "Celery任务队列",
+      "RESTful API设计",
+      "数据库优化"
+    ],
+    "soft_skills": ["代码规范意识", "API设计能力", "性能调优意识"],
+    "experience_years": "3-5年",
+    "education": "本科",
+    "interview_directions": [
+      "Python底层原理(GIL/协程/装饰器)",
+      "Web框架对比与选型",
+      "异步编程实战",
+      "数据库优化",
+      "微服务架构"
+    ],
+    "question_categories": [
+      {"name": "八股文", "weight": 40},
+      {"name": "算法", "weight": 25},
+      {"name": "系统设计", "weight": 20},
+      {"name": "项目深挖", "weight": 15}
+    ],
+    "difficulty_profile": "中等",
+    "jd_summary": "【岗位职责】\n1. 负责后端服务平台的设计、开发与维护，承担核心业务逻辑代码编写；\n2. 设计并优化数据库表结构、索引与查询性能，保障服务端稳定性；\n3. 基于 FastAPI / Django 构建 RESTful API，对接前端与第三方服务；\n4. 使用 Celery 处理异步任务与定时任务，优化系统吞吐能力；\n5. 参与代码评审、技术方案设计与线上问题排查。\n\n【任职要求】\n1. 本科及以上学历，3-5 年 Python 后端开发经验；\n2. 精通 Python，深入理解 GIL、协程、装饰器、元类等核心特性；\n3. 熟练使用 FastAPI / Django / Flask 至少一种框架，了解其底层原理；\n4. 熟悉 asyncio 异步编程，能基于 async/await 编写高并发服务；\n5. 精通 MySQL，熟练使用 SQLAlchemy ORM，具备性能调优经验；\n6. 熟练使用 Redis、Celery，了解消息队列与缓存设计模式；\n7. 熟悉 Docker、Nginx，了解 Linux 常用命令；\n8. 具备良好的代码规范意识与 API 设计能力。"
+  },
+  {
+    "id": "go-backend-1",
+    "card_type": "preset",
+    "role_name": "Go后端开发工程师",
+    "icon": "go",
+    "description": "擅长高并发系统设计，精通Go语言微服务开发",
+    "company": "云计算/互联网公司",
+    "tech_stack": ["Go", "Gin", "GORM", "gRPC", "MySQL", "Redis", "etcd", "Kafka", "Docker", "Kubernetes"],
+    "core_skills": [
+      "Go并发模型(goroutine/channel)",
+      "Go内存管理与逃逸分析",
+      "Gin/GRPC框架",
+      "微服务通信",
+      "context原理",
+      "interface设计",
+      "性能调优(pprof)",
+      "云原生架构"
+    ],
+    "soft_skills": ["架构设计能力", "性能意识", "团队协作"],
+    "experience_years": "3-5年",
+    "education": "本科",
+    "interview_directions": [
+      "Go并发编程",
+      "内存管理与逃逸分析",
+      "Go框架原理",
+      "微服务与服务发现",
+      "云原生技术"
+    ],
+    "question_categories": [
+      {"name": "八股文", "weight": 40},
+      {"name": "算法", "weight": 20},
+      {"name": "系统设计", "weight": 25},
+      {"name": "项目深挖", "weight": 15}
+    ],
+    "difficulty_profile": "中等偏难",
+    "jd_summary": "【岗位职责】\n1. 负责高并发平台系统的设计与开发，研究并落地业界优秀的网络协议与架构方案；\n2. 参与微服务整体架构设计、服务拆分与服务间通信（gRPC / etcd）落地；\n3. 进行系统性能优化，包括 goroutine 调度、内存逃逸分析、pprof 火焰图分析；\n4. 基于 Kubernetes 进行服务编排与部署，参与云原生架构演进；\n5. 排查线上疑难问题，保障系统高可用与高稳定性。\n\n【任职要求】\n1. 本科及以上学历，3-5 年 Go 后端开发经验；\n2. 精通 Go 语言，深入理解 goroutine、channel、GMP 调度模型、逃逸分析、GC 机制；\n3. 熟练使用 Gin、GORM、gRPC 框架，理解 context 与 interface 设计哲学；\n4. 熟悉微服务架构，了解服务注册发现、配置中心、链路追踪；\n5. 熟练使用 MySQL、Redis、Kafka、etcd 等中间件；\n6. 熟悉 Docker、Kubernetes，具备云原生实践经验；\n7. 具备性能调优经验，能熟练使用 pprof 等工具；\n8. 有大规模分布式系统设计经验者优先。"
+  },
+  {
+    "id": "fullstack-1",
+    "card_type": "preset",
+    "role_name": "全栈开发工程师",
+    "icon": "fullstack",
+    "description": "前后端兼顾，具备全链路开发能力",
+    "company": "数字化产品公司",
+    "tech_stack": ["Java", "Spring Boot", "Vue3", "React", "MySQL", "Redis", "Docker", "Nginx", "Webpack", "Git"],
+    "core_skills": [
+      "后端API设计与开发",
+      "前端框架开发(Vue/React)",
+      "数据库设计",
+      "全链路性能优化",
+      "DevOps基础",
+      "系统架构设计",
+      "跨端协作",
+      "CI/CD流水线"
+    ],
+    "soft_skills": ["跨团队沟通", "技术方案设计", "代码审查"],
+    "experience_years": "3-5年",
+    "education": "本科",
+    "interview_directions": [
+      "后端核心原理",
+      "前端核心原理",
+      "全栈架构设计",
+      "数据库与中间件",
+      "工程化与部署"
+    ],
+    "question_categories": [
+      {"name": "八股文", "weight": 30},
+      {"name": "算法", "weight": 20},
+      {"name": "系统设计", "weight": 35},
+      {"name": "项目深挖", "weight": 15}
+    ],
+    "difficulty_profile": "中等偏难",
+    "jd_summary": "【岗位职责】\n1. 参与产品全栈开发，承担业务系统的设计、开发、测试与维护工作；\n2. 负责后端 API 设计与开发，并完成前端 Vue3 / React 页面落地；\n3. 设计数据库表结构与缓存方案，进行全链路性能优化；\n4. 参与系统架构设计，保障系统高可用、易扩展；\n5. 持续进行性能优化、架构改进与代码评审。\n\n【任职要求】\n1. 本科及以上学历，3-5 年全栈开发经验；\n2. 熟练使用 Java + Spring Boot 进行后端开发，理解 IoC/AOP、事务、缓存等核心原理；\n3. 熟练使用 Vue3 或 React，掌握组件化、响应式原理、状态管理（Pinia/Redux）；\n4. 精通 MySQL，具备索引优化、事务设计与分库分表经验；\n5. 熟悉 Redis、消息队列等中间件；\n6. 熟悉 Docker、Nginx、CI/CD 流水线，具备 DevOps 基础；\n7. 具备跨团队沟通能力，能独立完成技术方案设计；\n8. 有完整产品全链路落地经验者优先。"
+  },
+  {
+    "id": "bigdata-1",
+    "card_type": "preset",
+    "role_name": "大数据开发工程师",
+    "icon": "bigdata",
+    "description": "掌握Hadoop生态，具备实时/离线数据处理能力",
+    "company": "数据驱动型企业",
+    "tech_stack": ["Java", "Scala", "Hadoop", "Spark", "Flink", "Hive", "Kafka", "HBase", "Airflow", "SQL"],
+    "core_skills": [
+      "Hadoop生态原理",
+      "Spark/Flink计算引擎",
+      "数据仓库建模",
+      "实时数仓",
+      "Kafka消息队列",
+      "SQL优化",
+      "数据治理",
+      "ETL流程设计"
+    ],
+    "soft_skills": ["数据敏感度", "业务理解能力", "问题定位能力"],
+    "experience_years": "3-5年",
+    "education": "本科",
+    "interview_directions": [
+      "离线计算(Spark/Hive)",
+      "实时计算(Flink)",
+      "数仓建模",
+      "消息队列",
+      "数据治理与质量"
+    ],
+    "question_categories": [
+      {"name": "八股文", "weight": 40},
+      {"name": "算法", "weight": 15},
+      {"name": "系统设计", "weight": 30},
+      {"name": "项目深挖", "weight": 15}
+    ],
+    "difficulty_profile": "中等偏难",
+    "jd_summary": "【岗位职责】\n1. 负责大数据离线与实时计算平台的开发与维护，承接业务数据需求；\n2. 参与数据仓库建模、ETL 流程设计与数据底座建设；\n3. 基于 Spark / Flink 进行离线与实时数据处理，保障任务稳定性与数据质量；\n4. 设计并优化数据同步、数据治理、数据质量监控方案；\n5. 与业务方对接，理解业务需求并落地为可复用的数据模型。\n\n【任职要求】\n1. 本科及以上学历，3-5 年大数据开发经验；\n2. 精通 Hadoop 生态，深入理解 HDFS、YARN、MapReduce 原理；\n3. 熟练使用 Spark、Flink，了解其任务调度、内存管理与 shuffle 机制；\n4. 熟悉 Hive 数仓建模、分层设计与 SQL 优化；\n5. 熟练使用 Kafka、HBase、Airflow；\n6. 具备数据治理、数据质量与元数据管理经验；\n7. 熟悉 Java / Scala 至少一种语言；\n8. 有实时数仓或湖仓一体建设经验者优先。"
+  },
+  {
+    "id": "algo-1",
+    "card_type": "preset",
+    "role_name": "算法工程师",
+    "icon": "algorithm",
+    "description": "掌握机器学习/深度学习，具备算法落地能力",
+    "company": "AI/互联网公司",
+    "tech_stack": ["Python", "PyTorch", "TensorFlow", "scikit-learn", "Pandas", "NumPy", "SQL", "Spark", "Linux"],
+    "core_skills": [
+      "机器学习基础(分类/回归/聚类)",
+      "深度学习(CNN/RNN/Transformer)",
+      "模型评估与调优",
+      "特征工程",
+      "数据结构与算法",
+      "概率统计",
+      "SQL数据处理",
+      "算法工程化"
+    ],
+    "soft_skills": ["业务建模能力", "论文复现能力", "团队协作"],
+    "experience_years": "3-5年",
+    "education": "硕士",
+    "interview_directions": [
+      "机器学习算法原理",
+      "深度学习模型",
+      "算法手撕代码",
+      "模型工程化",
+      "业务场景建模"
+    ],
+    "question_categories": [
+      {"name": "八股文", "weight": 25},
+      {"name": "算法", "weight": 45},
+      {"name": "系统设计", "weight": 15},
+      {"name": "项目深挖", "weight": 15}
+    ],
+    "difficulty_profile": "困难",
+    "jd_summary": "【岗位职责】\n1. 负责机器学习 / 深度学习算法研发，覆盖 CTR 预估、智能营销、推荐排序等业务场景；\n2. 基于海量数据构建模型，完成特征工程、模型训练、评估与上线全流程；\n3. 跟踪业界前沿算法与论文，进行算法复现与业务落地；\n4. 与工程团队协作，推动模型工程化与服务化部署；\n5. 持续优化模型效果，提升业务核心指标。\n\n【任职要求】\n1. 硕士及以上学历，计算机、统计、数学等相关专业，3-5 年算法经验；\n2. 扎实的机器学习基础，熟悉分类、回归、聚类、排序等常见算法原理；\n3. 熟悉深度学习，了解 CNN / RNN / Transformer，能基于 PyTorch 或 TensorFlow 进行模型开发；\n4. 熟练使用 Python、Pandas、NumPy、scikit-learn，具备 SQL 数据处理能力；\n5. 具备特征工程、模型评估与调优实战经验；\n6. 扎实的数据结构与算法基础，能熟练手撕常见算法题；\n7. 有推荐系统、搜索、广告算法落地经验者优先；\n8. 有顶会论文或 Kaggle 比赛获奖经历者优先。"
+  },
+  {
+    "id": "devops-1",
+    "card_type": "preset",
+    "role_name": "DevOps工程师",
+    "icon": "devops",
+    "description": "精通容器化与自动化运维，保障系统稳定",
+    "company": "中大型企业",
+    "tech_stack": ["Linux", "Shell", "Python", "Docker", "Kubernetes", "Jenkins", "Prometheus", "Grafana", "Ansible", "Nginx"],
+    "core_skills": [
+      "Linux系统管理",
+      "Docker容器化",
+      "K8s编排与调度",
+      "CI/CD流水线",
+      "监控告警体系",
+      "自动化运维",
+      "网络与安全",
+      "日志分析"
+    ],
+    "soft_skills": ["故障排查能力", "自动化意识", "文档能力"],
+    "experience_years": "3-5年",
+    "education": "本科",
+    "interview_directions": [
+      "容器与编排(Docker/K8s)",
+      "CI/CD流程",
+      "监控与告警",
+      "自动化脚本",
+      "云原生架构"
+    ],
+    "question_categories": [
+      {"name": "八股文", "weight": 35},
+      {"name": "算法", "weight": 10},
+      {"name": "系统设计", "weight": 40},
+      {"name": "项目深挖", "weight": 15}
+    ],
+    "difficulty_profile": "中等偏难",
+    "jd_summary": "【岗位职责】\n1. 负责容器与编排平台（Docker / Kubernetes）的建设、维护与优化；\n2. 设计并落地 CI/CD 流水线，推动自动化构建、测试与部署；\n3. 搭建并维护监控告警体系（Prometheus / Grafana），保障线上稳定性；\n4. 编写自动化运维脚本与 Ansible Playbook，提升运维效率；\n5. 参与云原生架构演进，处理线上故障与性能问题。\n\n【任职要求】\n1. 本科及以上学历，3-5 年 DevOps / SRE 经验；\n2. 精通 Linux 系统管理，熟练使用 Shell / Python 编写自动化脚本；\n3. 精通 Docker 容器化，深入理解 Kubernetes 编排、调度、网络与存储；\n4. 熟练配置 CI/CD 流水线（Jenkins / GitLab CI），了解 GitOps 者优先；\n5. 熟悉 Prometheus、Grafana、ELK 等监控与日志体系；\n6. 熟练使用 Ansible、Terraform 等自动化工具；\n7. 熟悉 Nginx、网络与安全基础知识；\n8. 具备大规模集群运维经验，有故障排查能力。"
+  },
+  {
+    "id": "frontend-1",
+    "card_type": "preset",
+    "role_name": "前端开发工程师",
+    "icon": "frontend",
+    "description": "精通现代前端框架，具备前端工程化能力",
+    "company": "互联网产品公司",
+    "tech_stack": ["JavaScript", "TypeScript", "Vue3", "React", "Node.js", "Webpack", "Vite", "HTML5", "CSS3", "Nginx"],
+    "core_skills": [
+      "JS异步与事件循环",
+      "Vue3响应式原理",
+      "React Hooks",
+      "TypeScript类型系统",
+      "浏览器渲染原理",
+      "HTTP/HTTPS协议",
+      "前端性能优化",
+      "前端工程化"
+    ],
+    "soft_skills": ["UI设计意识", "用户体验意识", "团队协作"],
+    "experience_years": "3-5年",
+    "education": "本科",
+    "interview_directions": [
+      "JS核心原理(闭包/原型链/this)",
+      "框架原理",
+      "浏览器与网络",
+      "前端工程化",
+      "性能优化"
+    ],
+    "question_categories": [
+      {"name": "八股文", "weight": 45},
+      {"name": "算法", "weight": 20},
+      {"name": "系统设计", "weight": 15},
+      {"name": "项目深挖", "weight": 20}
+    ],
+    "difficulty_profile": "中等",
+    "jd_summary": "【岗位职责】\n1. 负责前端架构设计与开发，基于 Vue3 / React 构建高质量 Web 应用；\n2. 持续进行前端性能优化，包括首屏加载、运行时性能与体积优化；\n3. 推动前端工程化建设，搭建或维护基于 Webpack / Vite 的构建体系；\n4. 与产品、设计、后端协作，完成需求评审、接口联调与上线；\n5. 参与代码评审，沉淀组件库与最佳实践。\n\n【任职要求】\n1. 本科及以上学历，3-5 年前端开发经验；\n2. 精通 JavaScript，深入理解闭包、原型链、this、事件循环、异步编程；\n3. 熟练使用 Vue3 或 React，掌握响应式原理、组件化、Hooks 与状态管理；\n4. 熟练使用 TypeScript，理解类型系统与泛型；\n5. 熟悉浏览器渲染原理、HTTP/HTTPS 协议、缓存策略；\n6. 熟练配置 Webpack / Vite，了解构建优化与打包分析；\n7. 具备前端性能优化实战经验；\n8. 有 Node.js、SSR、跨端开发经验者优先。"
+  },
+  {
+    "id": "agent-dev-1",
+    "card_type": "preset",
+    "role_name": "Agent开发工程师",
+    "icon": "agent",
+    "description": "精通大模型应用开发，具备智能体架构设计能力",
+    "company": "AI科技公司",
+    "tech_stack": ["Python", "LangChain", "LangGraph", "LLM", "VectorDB", "RAG", "Agent", "Prompt Engineering", "FastAPI", "Docker"],
+    "core_skills": [
+      "智能体(Agent)架构设计",
+      "LangChain/LangGraph实战",
+      "RAG检索增强生成",
+      "向量数据库应用",
+      "Prompt工程与优化",
+      "多轮对话管理",
+      "工具调用(Function Calling)",
+      "大模型微调与评估"
+    ],
+    "soft_skills": ["产品思维", "问题拆解能力", "快速学习能力"],
+    "experience_years": "3-5年",
+    "education": "本科",
+    "interview_directions": [
+      "Agent架构与设计模式",
+      "RAG与向量检索",
+      "Prompt Engineering",
+      "大模型原理与应用",
+      "工具调用与多智能体"
+    ],
+    "question_categories": [
+      {"name": "八股文", "weight": 25},
+      {"name": "算法", "weight": 15},
+      {"name": "系统设计", "weight": 40},
+      {"name": "项目深挖", "weight": 20}
+    ],
+    "difficulty_profile": "中等偏难",
+    "jd_summary": "【岗位职责】\n1. 负责基于大模型的智能体（Agent）产品设计与研发，主导核心架构与技术选型；\n2. 基于 LangChain / LangGraph 构建多轮对话、工具调用、多智能体协作系统；\n3. 设计并实现 RAG 检索增强生成方案，优化向量检索与知识召回效果；\n4. 进行 Prompt Engineering 与模型调优，提升 Agent 任务完成率与稳定性；\n5. 对接各类 LLM API（OpenAI / 通义 / 文心等），封装统一调用接口；\n6. 参与产品需求评审，推动 AI 能力落地到业务场景。\n\n【任职要求】\n1. 本科及以上学历，3-5 年 Python 开发经验，有 LLM / Agent 项目经验；\n2. 精通 LangChain、LangGraph 等框架，深入理解 Agent 设计模式（ReAct、Plan-and-Execute 等）；\n3. 熟悉 RAG 技术栈，掌握向量数据库（Milvus / Pinecone / Chroma / Weaviate）与 Embedding 模型；\n4. 熟练掌握 Prompt Engineering，具备 CoT、Few-shot、Self-Consistency 等优化经验；\n5. 熟悉 Function Calling / Tool Use，能设计并实现工具调用链路；\n6. 了解大模型基本原理（Transformer、Attention、微调、对齐）；\n7. 熟练使用 FastAPI / Django 构建后端服务，熟悉 Docker 部署；\n8. 有开源 Agent 框架贡献或多智能体系统设计经验者优先。"
+  }
+]

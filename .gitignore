@@ -1,0 +1,41 @@
+# ============================================
+# 环境与密钥（严禁上传真实密钥）
+# ============================================
+.env
+.env.local
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+*.egg-info/
+
+# Java
+target/
+*.class
+*.jar
+
+# Frontend
+node_modules/
+dist/
+.vite-cache/
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker 数据
+docker/data/
+
+# 上传目录
+.uploads/
+uploads/

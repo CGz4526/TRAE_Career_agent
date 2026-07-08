@@ -1,0 +1,90 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  application:
+    name: backend-java
+
+  # MySQL 数据源配置
+  datasource:
+    url: jdbc:mysql://localhost:3308/career_agent?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: career
+    password: career123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+  # Redis 配置
+  data:
+    redis:
+      host: localhost
+      port: 6380
+      password: redis123456
+      database: 0
+      timeout: 5000ms
+      lettuce:
+        pool:
+          max-active: 8
+          max-idle: 4
+          min-idle: 0
+          max-wait: -1ms
+
+  # Jackson 配置
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+    default-property-inclusion: non_null
+
+# MyBatis Plus 配置
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: auto
+
+# JWT 配置
+jwt:
+  secret: career-agent-jwt-secret-key-2024-very-long-secret-for-hs256-signing-algorithm
+  expiration: 86400000  # 24小时，单位毫秒
+  header: Authorization
+  prefix: "Bearer "
+
+# Python AI 服务配置
+ai-service:
+  base-url: http://localhost:8000
+  endpoints:
+    match-job: /agent/match-job
+    optimize-resume: /agent/optimize-resume
+    generate-questions: /agent/generate-questions
+    project-story: /agent/project-story
+    pipeline: /agent/pipeline
+    interview-start: /agent/interview/start
+    interview-chat: /agent/interview/chat
+    interview-report: /agent/interview/{session_id}/report
+
+# WebSocket 配置
+websocket:
+  interview-endpoint: /ws/interview
+  ai-websocket-url: ws://localhost:8000/ws/interview
+
+# 应用配置
+app:
+  upload-dir: ./uploads
+
+# 日志配置
+logging:
+  level:
+    com.career: debug
+    org.springframework.security: info
+    com.baomidou.mybatisplus: debug
