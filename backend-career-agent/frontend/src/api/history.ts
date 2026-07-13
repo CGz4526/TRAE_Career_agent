@@ -1,4 +1,4 @@
-import request from './client'
+import { apiClient as request } from './client'
 
 export const historyApi = {
   /** 获取简历列表 */

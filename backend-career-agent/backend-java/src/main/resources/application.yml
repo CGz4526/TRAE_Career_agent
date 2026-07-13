@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: ${PORT:8080}
   servlet:
     encoding:
       charset: UTF-8
@@ -12,9 +12,9 @@ spring:
 
   # MySQL 数据源配置
   datasource:
-    url: jdbc:mysql://localhost:3308/career_agent?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
-    username: career
-    password: career123456
+    url: jdbc:mysql://${MYSQLHOST:localhost}:${MYSQLPORT:3308}/${MYSQLDATABASE:career_agent}?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: ${MYSQLUSER:career}
+    password: ${MYSQLPASSWORD:career123456}
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       maximum-pool-size: 10
@@ -26,9 +26,9 @@ spring:
   # Redis 配置
   data:
     redis:
-      host: localhost
-      port: 6380
-      password: redis123456
+      host: ${REDISHOST:localhost}
+      port: ${REDISPORT:6380}
+      password: ${REDISPASSWORD:redis123456}
       database: 0
       timeout: 5000ms
       lettuce:
@@ -62,7 +62,7 @@ jwt:
 
 # Python AI 服务配置
 ai-service:
-  base-url: http://localhost:8000
+  base-url: ${AI_SERVICE_URL:http://localhost:8000}
   endpoints:
     match-job: /agent/match-job
     optimize-resume: /agent/optimize-resume

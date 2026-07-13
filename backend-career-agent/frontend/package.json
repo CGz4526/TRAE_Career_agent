@@ -20,6 +20,7 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
+    "@types/node": "^26.1.1",
     "@vitejs/plugin-vue": "^5.0.4",
     "typescript": "^5.4.2",
     "uipro-cli": "^2.2.3",

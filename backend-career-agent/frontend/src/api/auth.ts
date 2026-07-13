@@ -1,4 +1,4 @@
-import request from './client'
+import { apiClient as request } from './client'
 
 export interface UserProfile {
   userId: number

@@ -1,4 +1,4 @@
-import request from './client'
+import { agentClient as request } from './client'
 import type { JobProfile } from '@/stores/app'
 
 /**
