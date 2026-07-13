@@ -29,7 +29,23 @@ deploy/
 
 ### 0. 前置（服务器上）
 - 已装：git / python3 / docker + docker-compose / nginx / JDK 17（Java 运行用，无需 Maven）
-- 把本仓库传到 `/opt/app/backend-career-agent`（路径与下方配置一致，若改路径请同步改各文件里的路径）
+- 代码部署在 `/opt/app/backend-career-agent`（路径与下方配置一致，若改路径请同步改各文件里的路径）
+
+#### 获取代码（重点：国内服务器直连 GitHub 常卡死）
+**方式一：用 GitHub 镜像（服务器上直接跑，推荐先试）**
+```bash
+sudo mkdir -p /opt/app
+# 任选一个能通的镜像（哪个通就用哪个）
+sudo git clone https://gitclone.com/github.com/CGz4526/TRAE_Career_agent.git /opt/app/backend-career-agent
+# 或：sudo git clone https://mirror.ghproxy.com/https://github.com/CGz4526/TRAE_Career_agent.git /opt/app/backend-career-agent
+# 或：sudo git clone https://ghproxy.net/https://github.com/CGz4526/TRAE_Career_agent.git /opt/app/backend-career-agent
+```
+> 若 `git clone https://github.com/...` 卡在 "Receiving objects"，就是直连被墙/限速，立刻 Ctrl+C 改用上面镜像。
+
+**方式二：本地 bundle 传输（镜像也不通时的保底方案，完全不依赖 GitHub）**
+1. 在本机（代码所在的机器）打包：`git bundle create career_agent.bundle main`
+2. 从本机 scp 到服务器：`scp career_agent.bundle ubuntu@<服务器IP>:~/`
+3. 服务器上：`sudo mkdir -p /opt/app && git clone ~/career_agent.bundle /opt/app/backend-career-agent`
 
 ### 1. Python 依赖（独立 venv，避免与 gt-agent 的 paddle/numpy 冲突）
 ```bash
