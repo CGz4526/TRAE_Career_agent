@@ -11,11 +11,19 @@ from config import settings
 
 def get_llm() -> ChatOpenAI:
     """获取 LLM 实例"""
+    model_kwargs = {}
+    default_headers = {}
+    # DeepSeek 模型默认开启 thinking 模式，与 with_structured_output 的 tool_choice 冲突
+    if "deepseek" in settings.llm_model.lower():
+        # 通过 chat_template_kwargs 关闭 thinking（百炼兼容 API 通用做法）
+        model_kwargs["extra_body"] = {"enable_thinking": False}
     return ChatOpenAI(
         model=settings.llm_model,
         api_key=settings.llm_api_key,
         base_url=settings.llm_base_url,
         temperature=0.3,
+        model_kwargs=model_kwargs,
+        default_headers=default_headers,
     )
 
 

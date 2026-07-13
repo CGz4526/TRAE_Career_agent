@@ -319,7 +319,7 @@ import type { RoleCard } from '@/types/role_card'
 const router = useRouter()
 const appStore = useAppStore()
 
-const resumeText = ref(appStore.currentResume || '')
+const resumeText = ref('')
 const jobProfileText = ref('')
 const parsing = ref(false)
 const analyzing = ref(false)

@@ -1,0 +1,18 @@
+[Unit]
+Description=后端职途 Java 业务服务
+After=network.target docker.service
+Requires=docker.service
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/app/backend-career-agent/backend-java
+# 严格限堆，避免在小内存服务器上吃爆内存
+Environment="JAVA_OPTS=-Xmx256m -Xss256k -XX:+UseG1GC -Dfile.encoding=UTF-8"
+EnvironmentFile=/opt/app/backend-career-agent/deploy/env/java.env
+ExecStart=/usr/bin/java $JAVA_OPTS -jar target/backend-java-0.1.0.jar
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

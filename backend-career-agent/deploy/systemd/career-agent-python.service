@@ -1,0 +1,17 @@
+[Unit]
+Description=后端职途 Python AI 服务
+After=network.target
+
+[Service]
+User=www-data
+Group=www-data
+WorkingDirectory=/opt/app/backend-career-agent/backend-python
+Environment=PATH=/opt/venvs/career-agent/bin
+EnvironmentFile=/opt/app/backend-career-agent/deploy/env/python.env
+# 生产环境 debug=false（关闭 uvicorn reload，省一个 reloader 进程 ~100MB）
+ExecStart=/opt/venvs/career-agent/bin/python -m uvicorn main:app --host 127.0.0.1 --port 8001 --workers 1
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
